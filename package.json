@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Project-Vynx/Vynx-Backend.git"
+    "url": "git+https://github.com/vynx-solutions/VynxBackend.git"
   },
   "keywords": [
     "fortnite",
@@ -39,7 +39,7 @@
   "author": "burlone0",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Project-Vynx/Vynx-Backend/issues"
+    "url": "https://github.com/vynx-solutions/VynxBackend/issues"
   },
-  "homepage": "https://github.com/Project-Vynx/Vynx-Backend#readme"
+  "homepage": "https://github.com/vynx-solutions/VynxBackend/#readme"
 }
