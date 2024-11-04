@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 class CheckForUpdate {
     static async checkForUpdate(currentVersion) {
         try {
-            const response = await fetch('https://raw.githubusercontent.com/vynx-solutions/VynxBackend/refs/heads/main/package.json?token=GHSAT0AAAAAACXYAUA3WFCOPLKEFXY2RL7KZZH2P3A');
+            const response = await fetch('https://raw.githubusercontent.com/vynx-solutions/VynxBackend/refs/heads/main/package.json');
             if (!response.ok) {
                 log.error(`Failed to fetch package.json. Status: ${response.status}`);
                 return false;
