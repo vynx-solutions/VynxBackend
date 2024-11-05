@@ -116,6 +116,25 @@ fs.readdirSync("./Api").forEach(fileName => {
     }
 });
 
+app.get("/itemshopstuff", (req, res) => {
+    log.debug('GET /itemshopstuff endpoint called');
+    const configPath = path.join(__dirname, 'Config', 'catalog_config.json');
+    fs.readFile(configPath, 'utf8', (err, data) => {
+        if (err) {
+            log.error('Error reading catalog_config.json:', err);
+            res.status(500).json({ error: 'Failed to read configuration file' });
+            return;
+        }
+        let config = JSON.parse(data);
+        for (let key in config) {
+            if (config[key].itemGrants) {
+                config[key].itemGrants = config[key].itemGrants.map(item => item.split(':')[1]);
+            }
+        }
+        res.json(config);
+    });
+});
+
 app.get("/unknown", (req, res) => {
     log.debug('GET /unknown endpoint called');
     res.json({ msg: "Vynx Backend - Made by Burlone" });
