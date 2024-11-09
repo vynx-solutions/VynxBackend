@@ -28,6 +28,11 @@
       "websiteport": 100
     },
 
+    "//": "You're supposed to put a secure key here. This is for the give vbucks endpoint /givevbucks",
+    "bEnableGiveVbucks": true,
+    "bSecretKey": "your-secret-key-here",
+    "bEnableGiveVbucksDebugLogs": true,
+
     "//": "to add more gameserver on 'gameServerIP' add ip:port:playlist",
     "matchmakerIP": "127.0.0.1:80",
     "gameServerIP": ["127.0.0.1:7777:playlist_defaultsolo"],
