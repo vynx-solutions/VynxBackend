@@ -123,6 +123,14 @@ This is a modded backend, all main backend credits to [Lawin](https://github.com
 3) Change the values to what you want cids.
 4) Relaunch backend and relaunch game for changes to apply.
 
+## How to use vbucks-on-kill (endpoint to give vbucks)
+1) Go to config.json
+2) Change the secret key
+3) Enabled if isnt already enabled
+4) Start browser on ip:port/givevbucks
+5) Do a json body like this { "username": "playerusername", "giveamount": "amountofvbuckshere" }
+6) **Skip this step if you dont want vbucks on kill. So bassicly you gotta edit ur game server to call this api for every kill with the right args**
+
 ## License
 This **project/backend** is licensed under the **BSD 3-Clause License.**
 
@@ -130,7 +138,7 @@ This **project/backend** is licensed under the **BSD 3-Clause License.**
 ### Credits to:
 * [Lawin](https://github.com/Lawin0129) - For the backend base (LawinServerV2)
 * [Momentum](https://github.com/Nexus-FN/Momentum) - For some files
-* [Burlone](https://github.com/burlone0) - For the base backend called vynx
+* [Burlone](https://github.com/burlone0) - For the base backend called reload
 * [NotTacos](https://github.com/PhysicalDrive) - For adding the working challenges (Backend Part)
 * [zvivsp](https://github.com/zvivsp) - For creating the graphics
 * [joaco](https://github.com/ojotaa0124) - For helping with CloudStorage and responses stuff
